@@ -25,7 +25,7 @@ try:
         else:
             print("Database already exists.")
 
-except Error as e:
+except mysql.connector.Error as e:
     print(f"Error while connecting to database: {e}")
 
 
